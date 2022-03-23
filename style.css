@@ -12,7 +12,7 @@ header {
     background-image:
     url('img/headerimage.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     width: 100vw;
 }
