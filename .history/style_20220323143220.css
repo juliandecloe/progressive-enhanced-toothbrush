@@ -35,20 +35,11 @@ article {
 }
 
 article:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: .2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    place-items: stretch;
+    display: flex;
+    align-items: stretch;
 }
 
-article:nth-child(2) h2 {
-    grid-area: 1 / 1 / 2 / 3;
-    margin-bottom: 5rem;
-}
-
-article:nth-child(2) ul:first-of-type {
+article:nth-child(2) ul:first-child {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -57,10 +48,9 @@ article:nth-child(2) ul:first-of-type {
     filter: drop-shadow(2px 2px 4px gray);
     margin: 0 15vw;
     transition: 1s;
-    grid-area: 2 / 1 / 3 / 2;
 }
 
-article:nth-child(2) ul:first-of-type:hover {
+article:nth-child(2) ul:first-child:hover {
     transform: scale(1.1);
 }
 
@@ -70,31 +60,30 @@ article:nth-child(2) ul:last-child {
     justify-content: space-around;
     list-style-type: none;
     transition: 1s;
-    grid-area: 2 / 2 / 3 / 3;
 }
 
-article:nth-child(2) ul:first-of-type li:first-of-type {
+article:nth-child(2) ul:first-child li:first-of-type {
     transition: 1s;
     width: 2rem;
     z-index: 2;
 }
-article:nth-child(2) ul:first-of-type li:nth-of-type(2) {
+article:nth-child(2) ul:first-child li:nth-of-type(2) {
     transition: 1s;
     transform: translateY(-.7rem);
     width: 4.5rem;
     z-index: 1;
 }
-article:nth-child(2) ul:first-of-type li:last-of-type {
+article:nth-child(2) ul:first-child li:last-of-type {
     transition: 1s;
     transform: translate(-1.2rem, -2.5rem);
     width: 6rem;
 }
 
-article:nth-child(2) ul:first-of-type:hover li:first-of-type {
+article:nth-child(2) ul:first-child:hover li:first-of-type {
     transform: translateY(-2rem);
 }
 
-article:nth-child(2) ul:first-of-type:hover li:last-of-type {
+article:nth-child(2) ul:first-child:hover li:last-of-type {
     transform: translate(-1.2rem, 0);
 }
 
@@ -102,7 +91,7 @@ article:nth-child(2) h3 {
     color: #75A9E1;
 }
 
-article:nth-child(2) ul:first-of-type:hover ul {
+article:nth-child(2) ul:first-child:hover ul {
     font-size: 36px;
 }
 
@@ -128,20 +117,20 @@ article:last-child img {
     place-self: center;
 }
 
-article:last-child section:first-of-type img {
-    width: 5rem;
+article:last-child section:first-child img {
+    width: 5vw;
 }
 
-article:last-child section:nth-of-type(2) img {
-    width: 3rem;
+article:last-child section:nth-child(2) img {
+    width: 3vw;
 }
 
-article:last-child section:nth-of-type(3) img {
-    width: 3rem;
+article:last-child section:nth-child(3) img {
+    width: 3vw;
 }
 
-article:last-child section:last-of-type img {
-    width: 2rem;
+article:last-child section:last-child img {
+    width: 5vw;
 }
 
 article:last-child h3 {
