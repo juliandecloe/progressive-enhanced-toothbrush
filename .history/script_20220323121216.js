@@ -1,0 +1,1 @@
+fitText(document.querySelector("h1"), 0.38);

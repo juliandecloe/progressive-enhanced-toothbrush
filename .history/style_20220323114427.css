@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url('img/header.webp');
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    
+}

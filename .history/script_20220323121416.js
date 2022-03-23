@@ -1,0 +1,1 @@
+fitText(document.querySelector("header"), 0.5);
